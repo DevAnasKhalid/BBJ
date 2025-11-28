@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Braids By Jedine - Hair Care & Styling Services</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+  <body>
+  <div class="bg-primary-bg min-h-screen font-sans text-text-primary">
+    <!-- Header Section -->
+    <div class="bg-secondary-bg">
+      <div class="container mx-auto max-w-4xl py-8 px-4">
+        <header class="flex flex-col items-center mb-8">
+          <div class="logo">
+            <img src="Asset/logo.jpeg" alt="Braids By Jedine Logo" class="logo-image">
+          </div>
+          <h1 class="text-3xl font-bold mt-4 text-text-primary">Braids By Jedine</h1>
+          <p class="text-lg text-text-secondary mt-1">Personalized Hair Care & Styling Services</p>
+        </header>
+        <main>
+          <div class="info-panel text-center text-sm mb-12 space-y-6">
+            <p>
+              If you have any questions about your hair length or any questions about the style that you are
+              getting please call or text <a href="tel:586-935-2409" class="text-accent underline">586-935-2409</a> before booking your appointment. If you are booking
+              for a child please put in notes.
+            </p>
+            <div>
+              <p class="font-bold">WE HAVE MOVED</p>
+              <p class="font-bold">THE NEW ADDRESS IS</p>
+              <p><u class="no-underline underline-offset-4">1638 S. 7th St.</u></p>
+              <p><u class="no-underline underline-offset-4">Phoenix Az 85034</u></p>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <!-- Services Section -->
+    <section class="services-section py-16 sm:py-20">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl lg:text-4xl font-bold text-text-primary">Our Services</h2>
+          <div class="inline-block w-20 h-1 my-3 bg-accent"></div>
+          <p class="text-text-secondary text-lg">Comprehensive hair care solutions</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+          <div class="service-card bg-primary-bg rounded-xl shadow-md p-8 text-center transition-all duration-300 ease-in-out transform hover:-translate-y-2 hover:shadow-xl cursor-pointer border border-border-color">
+            <div class="flex justify-center items-center mb-5 h-12 text-accent">
+              <svg class="w-10 h-10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 22s2.5-2 2.5-5 2.5-5 2.5-5" />
+                <path d="M14 2s-2.5 2-2.5 5 2.5 5 2.5 5" />
+                <path d="M9.5 7s2.5 2 2.5 5-2.5 5-2.5 5" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold mb-3 text-text-primary">Hair Braiding</h3>
+            <p class="text-text-secondary text-sm">Expert braiding services with various styles and techniques.</p>
+          </div>
+          <div class="service-card bg-primary-bg rounded-xl shadow-md p-8 text-center transition-all duration-300 ease-in-out transform hover:-translate-y-2 hover:shadow-xl cursor-pointer border border-border-color">
+            <div class="flex justify-center items-center mb-5 h-12 text-accent">
+              <svg class="w-10 h-10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="6" cy="6" r="3" />
+                <circle cx="6" cy="18" r="3" />
+                <line x1="20" y1="4" x2="8.12" y2="15.88" />
+                <line x1="14.47" y1="14.48" x2="20" y2="20" />
+                <line x1="8.12" y1="8.12" x2="12" y2="12" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold mb-3 text-text-primary">Hair Takedowns</h3>
+            <p class="text-text-secondary text-sm">Professional and gentle removal of braids and extensions.</p>
+          </div>
+          <div class="service-card bg-primary-bg rounded-xl shadow-md p-8 text-center transition-all duration-300 ease-in-out transform hover:-translate-y-2 hover:shadow-xl cursor-pointer border border-border-color">
+            <div class="flex justify-center items-center mb-5 h-12 text-accent">
+              <svg class="w-10 h-10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5S5 13 5 15a7 7 0 0 0 7 7z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold mb-3 text-text-primary">Shampoo & Blow Dry</h3>
+            <p class="text-text-secondary text-sm">Refreshing wash and professional blow-dry for a sleek finish.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Appointments Section -->
+    <div class="bg-secondary-bg">
+      <div class="container mx-auto max-w-4xl py-8 px-4">
+        <section>
+          <div class="text-center mb-12 mt-12">
+            <h2 class="text-3xl lg:text-4xl font-bold text-text-primary"><i class="fa-solid fa-calendar-check"></i>
+              Select Appointment
+            </h2>
+            <div class="inline-block w-20 h-1 my-3 bg-accent"></div>
+          </div>
+          <div class="appointment-list space-y-2" id="appointmentList">
+            <!-- Appointment items will be dynamically inserted here -->
+          </div>
+          <div class="mt-12">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.663840751749!2d-112.0654701!3d33.432007399999996!2m3!1f0!2f0!3f0!3m2!1i1024!i768!4f13.1!3m3!1m2!1s0x872b11ec2aa8ba43%3A0x1906571aa6f812e9!2s1638%20S%207th%20St%2C%20Phoenix%2C%20AZ%2085034%2C%20USA!5e0!3m2!1sen!2s!4v1762942647664!5m2!1sen!2s"
+              class="w-full h-96"
+              style="border: 0;"
+              allowfullscreen="true"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Location Map"
+            ></iframe>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- WhatsApp Button -->
+    <a
+      href="https://wa.me/15869352409"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="whatsapp-button fixed bottom-6 right-6 w-16 h-16 flex items-center justify-center shadow-lg transition-all z-50"
+      aria-label="Chat on WhatsApp"
+    >
+      <svg width="64" height="64" viewBox="0 0 92 92" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="91.5618" height="91.5618" rx="45.7809" fill="#00D95F"/>
+        <path d="M22.8906 66.9759L26.1753 54.7627C23.5263 50.005 22.6847 44.4532 23.8049 39.1261C24.9251 33.7989 27.932 29.0537 32.2738 25.7612C36.6156 22.4688 42.0011 20.8499 47.4421 21.2016C52.883 21.5533 58.0144 23.8521 61.8946 27.6761C65.7749 31.5001 68.1437 36.5928 68.5664 42.0197C68.989 47.4466 67.4373 52.8437 64.1958 57.2206C60.9543 61.5974 56.2405 64.6605 50.9195 65.8477C45.5984 67.0349 40.027 66.2666 35.2276 63.6838L22.8906 66.9759ZM35.8224 59.1135L36.5854 59.5653C40.0617 61.6224 44.122 62.4737 48.1336 61.9865C52.1451 61.4992 55.8825 59.7009 58.7634 56.8717C61.6443 54.0424 63.5068 50.3413 64.0607 46.345C64.6146 42.3486 63.8288 38.2816 61.8257 34.7777C59.8226 31.2738 56.7148 28.5298 52.9865 26.9733C49.2582 25.4169 45.119 25.1354 41.2137 26.1728C37.3085 27.2101 33.8567 29.5081 31.3962 32.7085C28.9357 35.9089 27.6047 39.8319 27.6107 43.8663C27.6075 47.2115 28.5341 50.492 30.2876 53.3425L30.7661 54.1301L28.9298 60.9468L35.8224 59.1135Z" fill="white"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M54.3404 47.0031C53.8931 46.6429 53.3694 46.3894 52.8091 46.2619C52.2489 46.1344 51.6669 46.1362 51.1074 46.2672C50.2669 46.6158 49.7237 47.9326 49.1806 48.5911C49.0661 48.7489 48.8978 48.8596 48.7073 48.9024C48.5168 48.9452 48.3173 48.9171 48.1461 48.8234C45.0687 47.6202 42.4893 45.4135 40.8267 42.5619C40.6848 42.384 40.6177 42.158 40.6394 41.9317C40.6612 41.7053 40.77 41.4962 40.943 41.3483C41.5488 40.7496 41.9936 40.0081 42.2362 39.1923C42.2901 38.2925 42.0836 37.3962 41.6414 36.6102C41.2995 35.5084 40.6488 34.5273 39.7663 33.7829C39.3111 33.5785 38.8063 33.51 38.313 33.5856C37.8197 33.6612 37.3588 33.8776 36.9859 34.2089C36.3386 34.7664 35.8249 35.4618 35.4825 36.2438C35.14 37.0259 34.9777 37.8746 35.0074 38.7275C35.0093 39.2065 35.0702 39.6835 35.1884 40.1477C35.4887 41.263 35.9505 42.3286 36.5592 43.3107C36.9983 44.063 37.4775 44.7914 37.9946 45.4926C39.6751 47.7958 41.7876 49.7513 44.2148 51.2506C45.4328 52.0125 46.7345 52.632 48.0943 53.0968C49.5069 53.736 51.0665 53.9814 52.6075 53.8068C53.4855 53.6742 54.3174 53.3281 55.03 52.799C55.7426 52.27 56.314 51.5742 56.694 50.7729C56.9172 50.2889 56.985 49.7477 56.8879 49.2237C56.6552 48.1521 55.2197 47.5195 54.3404 47.0031Z" fill="white"/>
+      </svg>
+    </a>
+
+    <!-- Image Modal -->
+    <div class="image-modal fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 hidden" id="imageModal">
+      <div id="imageModalContent">
+        <img
+          id="modalImage"
+          src=""
+          alt=""
+        />
+        <button
+          class="modal-nav-arrow left hidden"
+          id="prevImageBtn"
+          aria-label="Previous Image"
+        >
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+          </svg>
+        </button>
+        <button
+          class="modal-nav-arrow right hidden"
+          id="nextImageBtn"
+          aria-label="Next Image"
+        >
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
+      </div>
+      <button
+        id="closeImageModalBtn"
+        aria-label="Close image viewer"
+      >
+        &times;
+      </button>
+    </div>
+
+    <!-- Booking Choice Modal -->
+    <div class="booking-choice-modal fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden p-4" id="bookingChoiceModal">
+      <div class="bg-primary-bg rounded-lg shadow-xl p-6 sm:p-8 w-full max-w-sm relative">
+        <button
+          class="absolute top-4 right-4 text-text-secondary hover:text-text-primary text-2xl"
+          id="closeBookingChoiceModalBtn"
+          aria-label="Close booking choice"
+        >
+          &times;
+        </button>
+        <h2 class="text-2xl font-bold text-text-primary mb-2 text-center">Choose Booking Method</h2>
+        <p class="text-text-secondary mb-8 text-center">For: <span class="font-semibold text-text-primary" id="bookingChoiceServiceName"></span></p>
+        <div class="space-y-4">
+          <button
+            class="w-full flex items-center justify-center bg-accent text-text-on-accent font-bold py-3 px-4 rounded-md hover:bg-accent-hover transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-accent"
+            id="emailBookingBtn"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+            Book via Email Request
+          </button>
+          <button
+            class="w-full flex items-center justify-center bg-secondary-bg text-text-primary font-bold py-3 px-4 rounded-md border border-border-color hover:bg-border-color transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-accent"
+            id="calendarBookingBtn"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+            </svg>
+            Book via Google Calendar
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Booking Modal -->
+    <div class="booking-modal fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden p-4" id="bookingModal">
+      <div class="bg-primary-bg rounded-lg shadow-xl p-6 sm:p-8 w-full max-w-md relative">
+        <button
+          class="absolute top-4 right-4 text-text-secondary hover:text-text-primary text-2xl"
+          id="closeBookingModalBtn"
+          aria-label="Close booking form"
+        >
+          &times;
+        </button>
+        <h2 class="text-2xl font-bold text-text-primary mb-2">Book Appointment</h2>
+        <p class="text-text-secondary mb-6">Service: <span class="font-semibold text-text-primary" id="bookingServiceName"></span></p>
+        <form id="bookingForm" class="space-y-4">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label for="name" class="block text-sm font-medium text-text-secondary">Full Name <span class="text-red-500">*</span></label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                class="mt-1 block w-full px-3 py-2 bg-white border border-border-color rounded-md shadow-sm focus:outline-none focus:ring-accent focus:border-accent sm:text-sm"
+              />
+            </div>
+            <div>
+              <label for="phone" class="block text-sm font-medium text-text-secondary">Phone Number <span class="text-red-500">*</span></label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                required
+                class="mt-1 block w-full px-3 py-2 bg-white border border-border-color rounded-md shadow-sm focus:outline-none focus:ring-accent focus:border-accent sm:text-sm"
+              />
+            </div>
+            <div>
+              <label for="date" class="block text-sm font-medium text-text-secondary">Preferred Date <span class="text-red-500">*</span></label>
+              <input
+                type="date"
+                id="date"
+                name="date"
+                required
+                class="mt-1 block w-full px-3 py-2 bg-white border border-border-color rounded-md shadow-sm focus:outline-none focus:ring-accent focus:border-accent sm:text-sm"
+              />
+            </div>
+            <div>
+              <label for="time" class="block text-sm font-medium text-text-secondary">Preferred Time <span class="text-red-500">*</span></label>
+              <select
+                id="time"
+                name="time"
+                required
+                class="mt-1 block w-full px-3 py-2 bg-white border border-border-color rounded-md shadow-sm focus:outline-none focus:ring-accent focus:border-accent sm:text-sm disabled:bg-gray-100"
+              >
+                <option value="" disabled>Select a time</option>
+              </select>
+            </div>
+          </div>
+          <div>
+            <label for="email" class="block text-sm font-medium text-text-secondary">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="mt-1 block w-full px-3 py-2 bg-white border border-border-color rounded-md shadow-sm focus:outline-none focus:ring-accent focus:border-accent sm:text-sm"
+            />
+          </div>
+          <div>
+            <label for="notes" class="block text-sm font-medium text-text-secondary">Notes (optional)</label>
+            <textarea
+              id="notes"
+              name="notes"
+              rows="3"
+              class="mt-1 block w-full px-3 py-2 bg-white border border-border-color rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-accent focus:border-accent sm:text-sm"
+              placeholder="Any special requests or details?"
+            ></textarea>
+          </div>
+          <div class="pt-2 text-center">
+            <button
+              type="submit"
+              class="w-full bg-accent text-text-on-accent font-bold py-3 px-4 rounded-md hover:bg-accent-hover transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-accent"
+            >
+              Confirm Booking
+            </button>
+            <p class="text-xs text-text-secondary mt-3">
+              This will open your default email app to send the booking request.
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  </body>
+</html>
